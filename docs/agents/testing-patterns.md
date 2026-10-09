@@ -43,8 +43,8 @@ checkPaths:
   - .github/workflows/release-gate.yml
   - .github/workflows/release-readiness.yml
 lastReviewedAt: 2026-10-09
-lastReviewedCommit: f5aca59ba37cbc888475f12d3d6e8e5a450de243
-lastReviewedNote: 'Platform #1194: seven-type exact-version display configuration in a manager-only first-level menu and mixed displayed list; old route/writer removed, existing Process numerical lookup preserved. Focused52 suites588 assertions, new-code100% coverage, lint/types, four-locale artifacts and production build pass. Full checked-push gate and paired Database800/Edge470 govern submission; no merge or deployment is authorized.'
+lastReviewedCommit: 249de4fd4b2cd1404979f629ef7d65da1053a656
+lastReviewedNote: 'Platform #1194: current route contract binds 60 assertions and 57 configured routes to the first-level display settings page and displayed datasets page. Immutable historical CI evidence is rejected for changed routes; labelled synthetic producer round-trip and route regressions pass in 3 suites / 52 tests. Full checked-push remains the submission gate; Database800 and Edge470 are required, with no merge or deployment.'
 ---
 
 # Testing Patterns Reference
