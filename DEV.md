@@ -43,8 +43,8 @@ checkPaths:
   - .github/workflows/build.yml
   - .nvmrc
 lastReviewedAt: 2026-10-09
-lastReviewedCommit: f5aca59ba37cbc888475f12d3d6e8e5a450de243
-lastReviewedNote: 'Platform #1194: seven-type exact-version display configuration in a manager-only first-level menu and mixed displayed list; old route/writer removed, existing Process numerical lookup preserved. Focused52 suites588 assertions, new-code100% coverage, lint/types, four-locale artifacts and production build pass. Full checked-push gate and paired Database800/Edge470 govern submission; no merge or deployment is authorized.'
+lastReviewedCommit: 600079020501b80e69adf3bff1b9224fb5874757
+lastReviewedNote: 'Platform #1194 display-copy follow-up: Chinese batch action uses 设为展示 and status choices 全部/已展示/未展示; supported translations and English fallbacks use displayed/not-displayed status while transport values and manager/data behavior remain unchanged. Four-locale canonical artifacts are idempotent; 8 focused suites/91 tests and qualification production build pass. Existing gates and baseline/correction boundaries unchanged; final checked push required. No merge or deployment.'
 ---
 
 # Development Bootstrap

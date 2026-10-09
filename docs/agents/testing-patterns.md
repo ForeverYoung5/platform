@@ -43,8 +43,8 @@ checkPaths:
   - .github/workflows/release-gate.yml
   - .github/workflows/release-readiness.yml
 lastReviewedAt: 2026-10-09
-lastReviewedCommit: 8f868650f53939d6960dab48287fc67c37b0dc10
-lastReviewedNote: 'Platform #1194 route follow-up: displayed datasets is an independent top-level hidden /displayed-datasets route; the nested /tgdata route is removed. Configuration links and four-locale title/route evidence are synchronized; focused64 tests pass. Loopback Playwright confirms direct and configuration-link navigation keep Open Data collapsed, with display settings after Data Processing. Original data/identity/result behavior unchanged; full checked-push/build remain required. No merge or deployment.'
+lastReviewedCommit: 600079020501b80e69adf3bff1b9224fb5874757
+lastReviewedNote: 'Platform #1194 display-copy follow-up: Chinese batch action uses 设为展示 and status choices 全部/已展示/未展示; supported translations and English fallbacks use displayed/not-displayed status while transport values and manager/data behavior remain unchanged. Four-locale canonical artifacts are idempotent; 8 focused suites/91 tests and qualification production build pass. Existing gates and baseline/correction boundaries unchanged; final checked push required. No merge or deployment.'
 ---
 
 # Testing Patterns Reference

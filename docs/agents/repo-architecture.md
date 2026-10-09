@@ -26,8 +26,8 @@ checkPaths:
   - config/docs-capture/**
   - tests/e2e/i18n/**
 lastReviewedAt: 2026-10-09
-lastReviewedCommit: 4ddfcb8ed21fb93cf0cc2c27401ae5968c0b024a
-lastReviewedNote: 'Platform #1194 collapsed-sidebar follow-up: Display Settings shares the existing Data Processing collapsed label-hiding and icon-centering rule. Loopback-only Playwright confirms hidden label, zero center delta and zero menu-item overflow, hover tooltip, icon navigation and restored expanded label. No role/data/result/route changes; full checked-push and build remain required. No merge or deployment.'
+lastReviewedCommit: 600079020501b80e69adf3bff1b9224fb5874757
+lastReviewedNote: 'Platform #1194 display-copy follow-up: Chinese batch action uses 设为展示 and status choices 全部/已展示/未展示; supported translations and English fallbacks use displayed/not-displayed status while transport values and manager/data behavior remain unchanged. Four-locale canonical artifacts are idempotent; 8 focused suites/91 tests and qualification production build pass. Existing gates and baseline/correction boundaries unchanged; final checked push required. No merge or deployment.'
 related:
   - ../AGENTS.md
   - ../.docpact/config.yaml
