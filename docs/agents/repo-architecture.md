@@ -26,8 +26,8 @@ checkPaths:
   - config/docs-capture/**
   - tests/e2e/i18n/**
 lastReviewedAt: 2026-10-09
-lastReviewedCommit: 600079020501b80e69adf3bff1b9224fb5874757
-lastReviewedNote: 'Platform #1194 display-copy follow-up: Chinese batch action uses 设为展示 and status choices 全部/已展示/未展示; supported translations and English fallbacks use displayed/not-displayed status while transport values and manager/data behavior remain unchanged. Four-locale canonical artifacts are idempotent; 8 focused suites/91 tests and qualification production build pass. Existing gates and baseline/correction boundaries unchanged; final checked push required. No merge or deployment.'
+lastReviewedCommit: 00383e45400dd16bcd32775e83fb2c9a42529336
+lastReviewedNote: 'Platform #1194 toolbar-link removal: remove View displayed datasets, unused Link import and four-locale message; preserve the independent hidden /displayed-datasets URL route and all role/filter/command/result behavior. Existing manager-page expectation and route-view ownership updated; eight focused suites/91 tests and four-locale audit/activation/idempotence checks pass. Production build and loopback-browser smoke pass: no toolbar link and direct /displayed-datasets navigation works using fenced synthetic data. Browser/server resources closed; final checked push remains required; no merge/deployment.'
 related:
   - ../AGENTS.md
   - ../.docpact/config.yaml
@@ -76,7 +76,7 @@ Use this default read path:
 
 `/dataset-display-settings` is a first-level menu restricted to `data_product_manager`, immediately after Data Processing. It lists every exact version of the seven business dataset types through a dedicated candidate RPC, with name/UUID search, type/visibility filters and reversible batch show/hide. It never reads raw cross-owner tables. Failed commands retain selection for retry; filter, page and locale changes clear selection. The Process-only publisher and old `/tgdata/published-processes` route are removed without redirect.
 
-`/displayed-datasets` is a top-level route independent of the Open Data hierarchy, directly URL-accessible and hidden from the sidebar menu. The superseded `/tgdata/displayed-datasets` route is removed. It lists selected exact versions with index, name, version, dataset type and calculation result, plus a toolbar type selector. Only visible Process rows load one existing Climate change batch through `src/services/dataProducts/publishedClimate.ts`; the current publication/package and exact-version logic stays unchanged. Non-Process and missing values show “—”; true zero and negative values remain numeric, while errors/loading remain explicit. Calculation cells keep the existing renderer and header unit. Page/type/locale changes and unmount invalidate outstanding responses. Database #799 and Edge #469 must precede the frontend rollout; display configuration changes neither raw access nor calculation eligibility.
+`/displayed-datasets` is a top-level route independent of the Open Data hierarchy, directly URL-accessible and hidden from the sidebar menu. Display Settings has no toolbar link to this page. The superseded `/tgdata/displayed-datasets` route is removed. It lists selected exact versions with index, name, version, dataset type and calculation result, plus a toolbar type selector. Only visible Process rows load one existing Climate change batch through `src/services/dataProducts/publishedClimate.ts`; the current publication/package and exact-version logic stays unchanged. Non-Process and missing values show “—”; true zero and negative values remain numeric, while errors/loading remain explicit. Calculation cells keep the existing renderer and header unit. Page/type/locale changes and unmount invalidate outstanding responses. Database #799 and Edge #469 must precede the frontend rollout; display configuration changes neither raw access nor calculation eligibility.
 
 Rules:
 

@@ -44,8 +44,8 @@ checkPaths:
   - pnpm-workspace.yaml
   - Dockerfile.app
 lastReviewedAt: 2026-10-09
-lastReviewedCommit: 600079020501b80e69adf3bff1b9224fb5874757
-lastReviewedNote: 'Platform #1194 display-copy follow-up: Chinese batch action uses 设为展示 and status choices 全部/已展示/未展示; supported translations and English fallbacks use displayed/not-displayed status while transport values and manager/data behavior remain unchanged. Four-locale canonical artifacts are idempotent; 8 focused suites/91 tests and qualification production build pass. Existing gates and baseline/correction boundaries unchanged; final checked push required. No merge or deployment.'
+lastReviewedCommit: 00383e45400dd16bcd32775e83fb2c9a42529336
+lastReviewedNote: 'Platform #1194 toolbar-link removal: remove View displayed datasets, unused Link import and four-locale message; preserve the independent hidden /displayed-datasets URL route and all role/filter/command/result behavior. Existing manager-page expectation and route-view ownership updated; eight focused suites/91 tests and four-locale audit/activation/idempotence checks pass. Production build and loopback-browser smoke pass: no toolbar link and direct /displayed-datasets navigation works using fenced synthetic data. Browser/server resources closed; final checked push remains required; no merge/deployment.'
 ---
 
 # Testing Strategy
