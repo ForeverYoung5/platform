@@ -3,7 +3,7 @@
   "locale": "fr-FR",
   "validationClosure": {
     "baselineSha": "c26f306e82ac66f50a56aafe8f89ea96c0b0c67d",
-    "auditedInputDigest": "632f9e0068910a1a002ea1a12ee5ebb0194062e62285688d35d2d46ca4c98c08",
+    "auditedInputDigest": "23797dd22f60c6912e3b7f517993a585d6ba77ccf2828ed8b5b38afe41f26ce5",
     "validatedMessageCount": 3545,
     "validatedModules": [
       "$entry",
@@ -42,9 +42,9 @@
     "highRiskMessageCount": 1662,
     "highRiskMessageDigest": "e37518afe9f8e284ad3aa480011beba503d2ffc2db3dcb59f4b8b253b83c1169",
     "catalogDigest": "a4bb1c5471bfe4c21078d1250232d8d2129dd1268bff7e92abc0027aab454400",
-    "dossierDigest": "7404530fccc7c610614feeaf0a210c96ff12627e4da6ab946250fdbe77a6c5e7",
+    "dossierDigest": "2818f97a6f723a307f32089fe449fc484cf17dfc0af4d2f20c0c3a6bb33f6d9d",
     "typedContentDossierDigest": "381b7b7af87d349151ab51d77de2402d93629029efa5ff964e45d5e00cddf454",
-    "routeEvidenceDigest": "a96efea7a75496ee12f38381fa4dcc6b3edf96a032073887f13982b824ab3af7",
+    "routeEvidenceDigest": "e7b7e54d86945b3296e2b05a6aec2185b6bea8129503083d659eb247cb5f7567",
     "scope": "deterministic structure only; semantic translation and rendered route review are separate production blockers owned by #635"
   },
   "validationLanes": [
@@ -98,7 +98,7 @@
         "messageDigest": "8baec99891f6bd71dc83e681c0ae3a3459967ebb13eeb8069d2c7577e7df15ff",
         "highRiskMessageCount": 1662,
         "highRiskMessageDigest": "e37518afe9f8e284ad3aa480011beba503d2ffc2db3dcb59f4b8b253b83c1169",
-        "dossierDigest": "7404530fccc7c610614feeaf0a210c96ff12627e4da6ab946250fdbe77a6c5e7",
+        "dossierDigest": "2818f97a6f723a307f32089fe449fc484cf17dfc0af4d2f20c0c3a6bb33f6d9d",
         "checks": {
           "nonEmptyTargets": true,
           "icuArgumentSignatureParity": true,
@@ -113,5 +113,5 @@
     }
   ],
   "blockedItems": [],
-  "validationDigest": "008073e50c19e036f4a7fd9432b3dd90bb971e0ccbcb53e791584f9c0e582394"
+  "validationDigest": "fd8f851797ec5ae34f56e484db16d1c5268fc58fac0d4555ae1bc468cfce11bd"
 }

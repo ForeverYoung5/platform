@@ -1108,6 +1108,31 @@ describe('ProcessesPage', () => {
     expect(mockPublishOpenDataProcesses).not.toHaveBeenCalled();
   });
 
+  it('preserves Open Data keyword search and its original catalog filters after moving display configuration', async () => {
+    mockGetDataSource.mockReturnValue('tg');
+    mockLocation = { pathname: '/tgdata/processes', search: '?tid=team-1' };
+    renderWithProviders(<ProcessesPage />);
+    await waitFor(() => expect(mockGetProcessTableAll).toHaveBeenCalled());
+
+    await userEvent.click(screen.getByRole('button', { name: /search/i }));
+    await waitFor(() =>
+      expect(mockGetProcessTablePgroongaSearch).toHaveBeenCalledWith(
+        { pageSize: 10, current: 1 },
+        'en',
+        'tg',
+        'cement',
+        {},
+        'all',
+        'all',
+        undefined,
+        'team-1',
+        false,
+        { sourceFilter: 'all', publicationFilter: 'all' },
+      ),
+    );
+    expect(mockPublishOpenDataProcesses).not.toHaveBeenCalled();
+  });
+
   it('falls back to empty tid and null team when the route has no team query or team data payload', async () => {
     mockLocation = {
       pathname: '/mydata/processes',

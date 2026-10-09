@@ -46,10 +46,12 @@ export async function listDatasetDisplay(
     p_page_size: params.pageSize ?? 10,
     p_page: params.current ?? 1,
   };
-  const { data, error } = await supabase.rpc(
-    candidates ? 'list_dataset_display_candidates' : 'list_displayed_datasets',
-    candidates ? { ...args, p_visibility: params.visibility ?? 'all' } : args,
-  );
+  const { data, error } = candidates
+    ? await supabase.rpc('list_dataset_display_candidates', {
+        ...args,
+        p_visibility: params.visibility ?? 'all',
+      })
+    : await supabase.rpc('list_displayed_datasets', args);
   if (error) return { data: [], success: false, total: 0, error };
   if (
     !data ||

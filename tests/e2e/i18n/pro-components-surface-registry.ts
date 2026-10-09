@@ -245,10 +245,10 @@ export const PRO_COMPONENT_SURFACE_FAMILIES = [
 export const EXPECTED_PRO_COMPONENT_RUNTIME_COUNTS = {
   DragSortTable: 1,
   LoginForm: 3,
-  PageContainer: 16,
+  PageContainer: 17,
   ProForm: 28,
   ProLayout: 3,
-  ProTable: 68,
+  ProTable: 69,
   SettingDrawer: 1,
   TableDropdown: 3,
 } as const satisfies Record<ProComponentRuntimeTag, number>;
