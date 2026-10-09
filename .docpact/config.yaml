@@ -40,6 +40,7 @@ ownership:
           - README_CN.md
           - .docpact/**
           - docs/agents/**
+          - docs/plans/model-product-demand.md
           - docs/plans/i18n/**
           - docs/plans/i18n-*/**
           - docs/plans/i18n/semantic-e2e-evidence.schema.json
@@ -106,6 +107,8 @@ coverage:
     - docs/agents/lca-analysis-visualization-plan.md
     - docs/agents/public-classifications-gz-usage.md
     - docs/agents/util_calculate.md
+    - docs/agents/model-modeling-and-calculation.md
+    - docs/plans/model-product-demand.md
     - docs/agents/lcia-calculation-evidence.md
     - docs/agents/team_management.md
     - docs/agents/data_audit_instruction.md
@@ -277,6 +280,8 @@ routing:
         - docs/agents/lca-analysis-visualization-plan.md
         - docs/agents/public-classifications-gz-usage.md
         - docs/agents/util_calculate.md
+        - docs/agents/model-modeling-and-calculation.md
+        - docs/plans/model-product-demand.md
         - docs/agents/lcia-calculation-evidence.md
         - docs/agents/team_management.md
         - docs/agents/data_audit_instruction.md
@@ -400,6 +405,8 @@ docInventory:
     - docs/agents/lca-analysis-visualization-plan.md
     - docs/agents/public-classifications-gz-usage.md
     - docs/agents/util_calculate.md
+    - docs/agents/model-modeling-and-calculation.md
+    - docs/plans/model-product-demand.md
     - docs/agents/lcia-calculation-evidence.md
     - docs/agents/team_management.md
     - docs/agents/data_audit_instruction.md
@@ -926,6 +933,10 @@ rules:
         kind: domain-ui
       - path: docs/agents/util_calculate.md
         kind: domain-doc
+      - path: docs/agents/model-modeling-and-calculation.md
+        kind: domain-doc
+      - path: docs/plans/model-product-demand.md
+        kind: design-reference
       - path: docs/agents/contribution-path-analysis-design.md
         kind: design-reference
       - path: docs/agents/lca-analysis-visualization-plan.md
@@ -938,6 +949,8 @@ rules:
       - path: docs/agents/repo-architecture.md
         mode: review_or_update
       - path: docs/agents/util_calculate.md
+        mode: review_or_update
+      - path: docs/agents/model-modeling-and-calculation.md
         mode: review_or_update
       - path: docs/agents/contribution-path-analysis-design.md
         mode: review_or_update
