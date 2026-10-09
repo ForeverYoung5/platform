@@ -134,8 +134,8 @@ export default function DatasetDisplaySettings() {
   ];
   return (
     <PageContainer header={{ breadcrumb: {}, title: false }}>
-      <Space orientation='vertical' style={{ width: '100%' }}>
-        <Card className={responsiveSearchCardClassName}>
+      <Space orientation='vertical' size={0} style={{ width: '100%' }}>
+        <Card className={responsiveSearchCardClassName} style={{ marginBottom: 0 }}>
           <Input.Search
             size='large'
             aria-label={intl.formatMessage({
