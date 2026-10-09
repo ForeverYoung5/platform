@@ -43,8 +43,8 @@ checkPaths:
   - scripts/reference-data/**
   - .github/workflows/**
 lastReviewedAt: 2026-10-09
-lastReviewedCommit: 81e56bf04613899878a6c7bd0687c8a1235bf16f
-lastReviewedNote: 'Platform #1194 combined follow-up: candidate-load failures use App-context error modal and clear rows/total/selection; stale/unmounted completions are ignored. Search uses the existing large-input Card without AI/reference controls, with zero gap to the list including shared mobile-margin override. Eight focused suites/93 tests, four-locale audits/idempotence and final qualification build pass. Synthetic-loopback Chromium proves search transport, preserved query and retry after dialog/empty list; 1440/768px layout has gap0 and contained input/button. Browser/server closed; no hosted writes/merge/deployment; final checked push remains required.'
+lastReviewedCommit: b1ebeef21cd26ae69d0a8985febee6519b8a8655
+lastReviewedNote: 'Platform #1194 final layout alignment: direct sibling Card/ProTable and shared responsive Row/Col match the Process catalog; theme line-height reserves the 44px query row without optional AI/reference controls. Eight focused suites/93 tests, four-locale checks/idempotence and qualification build pass. Same-build synthetic-loopback Chromium measures both desktop cards at x296/y88/w1104/h94, search at x321/y115/h40 and list at y182; Settings has gap0 at 1440/768px. Search, error dialog, cleared rows/selection and retry with query preserved pass. Owned browser/server closed and artifacts retained privately; no hosted writes/merge/deployment. Final checked push remains required.'
 ---
 
 # Pre-Push Gate Policy
