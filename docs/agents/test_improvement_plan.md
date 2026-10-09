@@ -44,8 +44,8 @@ checkPaths:
   - pnpm-workspace.yaml
   - Dockerfile.app
 lastReviewedAt: 2026-10-09
-lastReviewedCommit: bce938c009c8ec02236158ab18361c31f2b1af34
-lastReviewedNote: 'Platform #1194: seven-type manager display configuration, 60 assertions / 57 routes, explicit audited display read RPCs, and PageContainer17 / ProTable69 inventory are synchronized. Immutable historical route proof is rejected; 52 route-proof tests, 125 surface/request contract assertions and 30 service/search regressions pass. Original Open Data search filters and Process result lookup are preserved. Full checked-push remains required; Database800 / Edge470 precede rollout. No merge or deployment.'
+lastReviewedCommit: 703bf57c3218ee17f007a98abaaefd59c6d3d581
+lastReviewedNote: 'Platform #1194 menu follow-up: displayed datasets stays URL-accessible with hideInMenu; manager-only first-level display settings follows Data Processing. Route regression8/8 passes and four-locale derived evidence is synchronized. Existing seven-type data, identity and numerical contracts are unchanged; full checked-push/build remain required before updating PR1195. No merge or deployment.'
 ---
 
 # Testing Strategy

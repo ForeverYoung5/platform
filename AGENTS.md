@@ -46,8 +46,8 @@ checkPaths:
   - .husky/pre-push
   - .github/workflows/**
 lastReviewedAt: 2026-10-09
-lastReviewedCommit: f5aca59ba37cbc888475f12d3d6e8e5a450de243
-lastReviewedNote: 'Platform #1194: seven-type exact-version display configuration in a manager-only first-level menu and mixed displayed list; old route/writer removed, existing Process numerical lookup preserved. Focused52 suites588 assertions, new-code100% coverage, lint/types, four-locale artifacts and production build pass. Full checked-push gate and paired Database800/Edge470 govern submission; no merge or deployment is authorized.'
+lastReviewedCommit: 703bf57c3218ee17f007a98abaaefd59c6d3d581
+lastReviewedNote: 'Platform #1194 menu follow-up: displayed datasets stays URL-accessible with hideInMenu; manager-only first-level display settings follows Data Processing. Route regression8/8 passes and four-locale derived evidence is synchronized. Existing seven-type data, identity and numerical contracts are unchanged; full checked-push/build remain required before updating PR1195. No merge or deployment.'
 related:
   - .docpact/config.yaml
   - docs/agents/repo-validation.md
