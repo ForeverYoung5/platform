@@ -41,8 +41,8 @@ checkPaths:
   - .github/workflows/release-gate.yml
   - .github/workflows/release-readiness.yml
 lastReviewedAt: 2026-10-09
-lastReviewedCommit: 00383e45400dd16bcd32775e83fb2c9a42529336
-lastReviewedNote: 'Platform #1194 toolbar-link removal: remove View displayed datasets, unused Link import and four-locale message; preserve the independent hidden /displayed-datasets URL route and all role/filter/command/result behavior. Existing manager-page expectation and route-view ownership updated; eight focused suites/91 tests and four-locale audit/activation/idempotence checks pass. Production build and loopback-browser smoke pass: no toolbar link and direct /displayed-datasets navigation works using fenced synthetic data. Browser/server resources closed; final checked push remains required; no merge/deployment.'
+lastReviewedCommit: 81e56bf04613899878a6c7bd0687c8a1235bf16f
+lastReviewedNote: 'Platform #1194 combined follow-up: candidate-load failures use App-context error modal and clear rows/total/selection; stale/unmounted completions are ignored. Search uses the existing large-input Card without AI/reference controls, with zero gap to the list including shared mobile-margin override. Eight focused suites/93 tests, four-locale audits/idempotence and final qualification build pass. Synthetic-loopback Chromium proves search transport, preserved query and retry after dialog/empty list; 1440/768px layout has gap0 and contained input/button. Browser/server closed; no hosted writes/merge/deployment; final checked push remains required.'
 ---
 
 # Testing Execution State
