@@ -44,8 +44,8 @@ checkPaths:
   - scripts/i18n/locale-delivery.mjs
   - .github/workflows/**
 lastReviewedAt: 2026-10-09
-lastReviewedCommit: 8f868650f53939d6960dab48287fc67c37b0dc10
-lastReviewedNote: 'Platform #1194 route follow-up: displayed datasets is an independent top-level hidden /displayed-datasets route; the nested /tgdata route is removed. Configuration links and four-locale title/route evidence are synchronized; focused64 tests pass. Loopback Playwright confirms direct and configuration-link navigation keep Open Data collapsed, with display settings after Data Processing. Original data/identity/result behavior unchanged; full checked-push/build remain required. No merge or deployment.'
+lastReviewedCommit: 4ddfcb8ed21fb93cf0cc2c27401ae5968c0b024a
+lastReviewedNote: 'Platform #1194 collapsed-sidebar follow-up: Display Settings shares the existing Data Processing collapsed label-hiding and icon-centering rule. Loopback-only Playwright confirms hidden label, zero center delta and zero menu-item overflow, hover tooltip, icon navigation and restored expanded label. No role/data/result/route changes; full checked-push and build remain required. No merge or deployment.'
 related:
   - ../AGENTS.md
   - ../.docpact/config.yaml
