@@ -101,7 +101,7 @@
   },
   "routeViewCoverage": {
     "path": "docs/plans/i18n/route-view-coverage.json",
-    "digest": "7d8028e6082703f4eaf941e6253c198eedb5eaca133756d1965378b0f3a81e02",
+    "digest": "42fc826453e7a225c9389adc4795dfb22bf1cdb40cb562f89ae98f8e383faaa1",
     "requiredRouteViews": ["/", "/welcome", "/welcome?view=carbon-footprint"],
     "derivedEvidence": {
       "schemaVersion": "tiangong.i18n-route-view-derived-evidence.v2",
@@ -1330,11 +1330,11 @@
     "scripts/i18n/language-hardcoding-allowlist.json": "ccf0ec3cf64830f8608ac996bc503237f08628e1acd987eb786cdd24f7394a5a",
     "src/components/ImportTidasPackage/reportContent.ts": "3b08a703edbbfd6312f863c6b70aae4289fe411d077d1d37b576b37eeb856c3c",
     "docs/plans/i18n-de-DE/dynamic-families.json": "190a60a8a38643094505ecec04ff62e9b5a4297144622ab051b95a6eeebeb945",
-    "docs/plans/i18n/route-view-coverage.json": "7d8028e6082703f4eaf941e6253c198eedb5eaca133756d1965378b0f3a81e02",
+    "docs/plans/i18n/route-view-coverage.json": "42fc826453e7a225c9389adc4795dfb22bf1cdb40cb562f89ae98f8e383faaa1",
     "docs/plans/i18n/fallback-contract.json": "94c88648a2bc4fa2b3e3dd2b1db476db5a182e8a5dd9dce2140f6faf2cceabe5",
     "docs/plans/i18n-zh-CN/glossary.json": "c891add0ee4bd6d24c0213d0c839474e145d85867426df796763b8e038053d9b",
     "docs/plans/i18n-zh-CN/style-guide.md": "8da9e9fe011c1f93e682c7d22bfc580945de0e4cfd785115c5b5d2ed6585acfb"
   },
   "blockedContext": [],
-  "contextDigest": "c175bd816c9023ab7a0f43cf3754dc451d2a156f6b12ee085be84bc256ef07bb"
+  "contextDigest": "7c2dc511f59752e734e1cf85bccdc205b449f41627fe8286afa83d9e3c742062"
 }
