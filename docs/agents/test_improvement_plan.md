@@ -43,9 +43,9 @@ checkPaths:
   - pnpm-lock.yaml
   - pnpm-workspace.yaml
   - Dockerfile.app
-lastReviewedAt: 2026-10-09
-lastReviewedCommit: b1ebeef21cd26ae69d0a8985febee6519b8a8655
-lastReviewedNote: 'Platform #1194 final layout alignment: direct sibling Card/ProTable and shared responsive Row/Col match the Process catalog; theme line-height reserves the 44px query row without optional AI/reference controls. Eight focused suites/93 tests, four-locale checks/idempotence and qualification build pass. Same-build synthetic-loopback Chromium measures both desktop cards at x296/y88/w1104/h94, search at x321/y115/h40 and list at y182; Settings has gap0 at 1440/768px. Search, error dialog, cleared rows/selection and retry with query preserved pass. Owned browser/server closed and artifacts retained privately; no hosted writes/merge/deployment. Final checked push remains required.'
+lastReviewedAt: 2026-10-10
+lastReviewedCommit: 11e84182b58224da5ae59c16330fe33d02dd5192
+lastReviewedNote: 'Reviewed PR1195 conflict resolution against Dev26f19842: combined display and product-provider documentation, retained both finite translation families and regenerated four-locale artifacts. Eight display/shared-UI source files are byte-identical to prior head40aa65a9; seventeen incoming source files exactly match Dev and the lockfile is unchanged. Focused eleven suites/105 tests, four-locale checks, qualification build and two-generation artifact idempotence pass. Existing permission/result behavior and local/hosted qualification boundaries remain unchanged; final checked push and live mergeability readback remain required. No browser, server or container was started, and no hosted data was changed.'
 ---
 
 # Testing Strategy
