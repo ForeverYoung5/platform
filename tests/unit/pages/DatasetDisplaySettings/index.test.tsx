@@ -219,7 +219,7 @@ describe('manager display settings page', () => {
     const view = render(<Page />);
     const columns = mockTableProps.columns;
     const visible = columns[4].render(null, { ...mockRow, isVisible: true });
-    expect(render(visible).container).toHaveTextContent('Visible');
+    expect(render(visible).container).toHaveTextContent('Displayed');
     await act(async () => mockTableProps.toolBarRender()[2].props.onClick());
     expect(mockSetDisplay).not.toHaveBeenCalled();
     fireEvent.click(screen.getByRole('button', { name: 'Select row' }));

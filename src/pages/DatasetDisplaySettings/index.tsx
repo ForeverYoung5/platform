@@ -123,7 +123,7 @@ export default function DatasetDisplaySettings() {
         <Tag color={row.isVisible ? 'purple' : undefined}>
           <FormattedMessage
             id={row.isVisible ? 'pages.datasetDisplay.visible' : 'pages.datasetDisplay.hidden'}
-            defaultMessage={row.isVisible ? 'Visible' : 'Hidden'}
+            defaultMessage={row.isVisible ? 'Displayed' : 'Not displayed'}
           />
         </Tag>
       ),
@@ -230,21 +230,21 @@ export default function DatasetDisplaySettings() {
                   value: 'all',
                   label: intl.formatMessage({
                     id: 'pages.datasetDisplay.allVisibility',
-                    defaultMessage: 'All visibility states',
+                    defaultMessage: 'All',
                   }),
                 },
                 {
                   value: 'visible',
                   label: intl.formatMessage({
                     id: 'pages.datasetDisplay.visible',
-                    defaultMessage: 'Visible',
+                    defaultMessage: 'Displayed',
                   }),
                 },
                 {
                   value: 'hidden',
                   label: intl.formatMessage({
                     id: 'pages.datasetDisplay.hidden',
-                    defaultMessage: 'Hidden',
+                    defaultMessage: 'Not displayed',
                   }),
                 },
               ]}

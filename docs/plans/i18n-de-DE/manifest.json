@@ -3,7 +3,7 @@
   "source": {
     "baseRef": "c26f306e82ac66f50a56aafe8f89ea96c0b0c67d",
     "baseCommit": "c26f306e82ac66f50a56aafe8f89ea96c0b0c67d",
-    "auditedInputDigest": "20b7a9b951cdca2774d1dd3ed5b31b22083725c2bb4875d2a689754f76d26de4",
+    "auditedInputDigest": "473371010d07d8cd5e345e27711db0035914494d784ca312a092f7656bcb34b7",
     "auditedInputDigestAlgorithm": "sha256(path\\0content\\0)",
     "repository": "tiangong-lca/platform"
   },
@@ -82701,7 +82701,7 @@
       },
       "translations": {
         "en-US": {
-          "value": "All visibility states",
+          "value": "All",
           "argumentSignature": [],
           "placeholders": [],
           "source": {
@@ -82712,7 +82712,7 @@
           }
         },
         "zh-CN": {
-          "value": "全部可见状态",
+          "value": "全部",
           "argumentSignature": [],
           "placeholders": [],
           "source": {
@@ -82723,7 +82723,7 @@
           }
         },
         "de-DE": {
-          "value": "Alle Anzeigestatus",
+          "value": "Alle",
           "argumentSignature": [],
           "placeholders": [],
           "source": {
@@ -82734,7 +82734,7 @@
           }
         },
         "fr-FR": {
-          "value": "Tous les états d’affichage",
+          "value": "Tous",
           "argumentSignature": [],
           "placeholders": [],
           "source": {
@@ -82752,13 +82752,13 @@
           "line": 231,
           "column": 26,
           "symbol": "DatasetDisplaySettings",
-          "defaultMessage": "All visibility states",
+          "defaultMessage": "All",
           "defaultMessageExpression": null
         }
       ],
       "defaultMessages": [
         {
-          "value": "All visibility states",
+          "value": "All",
           "argumentSignature": [],
           "placeholders": [],
           "locations": [
@@ -82784,7 +82784,7 @@
       },
       "translations": {
         "en-US": {
-          "value": "Hidden",
+          "value": "Not displayed",
           "argumentSignature": [],
           "placeholders": [],
           "source": {
@@ -82806,7 +82806,7 @@
           }
         },
         "de-DE": {
-          "value": "Ausgeblendet",
+          "value": "Nicht angezeigt",
           "argumentSignature": [],
           "placeholders": [],
           "source": {
@@ -82817,7 +82817,7 @@
           }
         },
         "fr-FR": {
-          "value": "Masqué",
+          "value": "Non affiché",
           "argumentSignature": [],
           "placeholders": [],
           "source": {
@@ -82836,7 +82836,7 @@
           "column": 11,
           "symbol": "columns",
           "defaultMessage": null,
-          "defaultMessageExpression": "row.isVisible ? 'Visible' : 'Hidden'"
+          "defaultMessageExpression": "row.isVisible ? 'Displayed' : 'Not displayed'"
         },
         {
           "kind": "formatMessage",
@@ -82844,13 +82844,13 @@
           "line": 245,
           "column": 26,
           "symbol": "DatasetDisplaySettings",
-          "defaultMessage": "Hidden",
+          "defaultMessage": "Not displayed",
           "defaultMessageExpression": null
         }
       ],
       "defaultMessages": [
         {
-          "value": "Hidden",
+          "value": "Not displayed",
           "argumentSignature": [],
           "placeholders": [],
           "locations": [
@@ -83249,7 +83249,7 @@
           }
         },
         "zh-CN": {
-          "value": "设为可见（{count}）",
+          "value": "设为展示（{count}）",
           "argumentSignature": [{ "name": "count", "type": "simple" }],
           "placeholders": ["count"],
           "source": {
@@ -83766,7 +83766,7 @@
       },
       "translations": {
         "en-US": {
-          "value": "Visible",
+          "value": "Displayed",
           "argumentSignature": [],
           "placeholders": [],
           "source": {
@@ -83777,7 +83777,7 @@
           }
         },
         "zh-CN": {
-          "value": "可见",
+          "value": "已展示",
           "argumentSignature": [],
           "placeholders": [],
           "source": {
@@ -83788,7 +83788,7 @@
           }
         },
         "de-DE": {
-          "value": "Sichtbar",
+          "value": "Angezeigt",
           "argumentSignature": [],
           "placeholders": [],
           "source": {
@@ -83799,7 +83799,7 @@
           }
         },
         "fr-FR": {
-          "value": "Visible",
+          "value": "Affiché",
           "argumentSignature": [],
           "placeholders": [],
           "source": {
@@ -83818,7 +83818,7 @@
           "column": 11,
           "symbol": "columns",
           "defaultMessage": null,
-          "defaultMessageExpression": "row.isVisible ? 'Visible' : 'Hidden'"
+          "defaultMessageExpression": "row.isVisible ? 'Displayed' : 'Not displayed'"
         },
         {
           "kind": "formatMessage",
@@ -83826,13 +83826,13 @@
           "line": 238,
           "column": 26,
           "symbol": "DatasetDisplaySettings",
-          "defaultMessage": "Visible",
+          "defaultMessage": "Displayed",
           "defaultMessageExpression": null
         }
       ],
       "defaultMessages": [
         {
-          "value": "Visible",
+          "value": "Displayed",
           "argumentSignature": [],
           "placeholders": [],
           "locations": [
