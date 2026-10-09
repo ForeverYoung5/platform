@@ -42,9 +42,9 @@ checkPaths:
   - scripts/typescript-native-parser.*
   - scripts/reference-data/**
   - .github/workflows/**
-lastReviewedAt: 2026-10-08
-lastReviewedCommit: 17c9ba51fecfbd4d27d98260f42326d2953fa4f5
-lastReviewedNote: 'Reviewed Platform #1189 browser preference order, English default, manual-only persistence, legacy compatibility and the denied-storage Umi bridge. Dependency, backend, authorization and full-gate boundaries remain unchanged.'
+lastReviewedAt: 2026-10-09
+lastReviewedCommit: f5aca59ba37cbc888475f12d3d6e8e5a450de243
+lastReviewedNote: 'Platform #1194: seven-type exact-version display configuration in a manager-only first-level menu and mixed displayed list; old route/writer removed, existing Process numerical lookup preserved. Focused52 suites588 assertions, new-code100% coverage, lint/types, four-locale artifacts and production build pass. Full checked-push gate and paired Database800/Edge470 govern submission; no merge or deployment is authorized.'
 ---
 
 # Pre-Push Gate Policy
