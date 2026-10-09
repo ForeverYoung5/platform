@@ -34,13 +34,6 @@ export default [
     hideInMenu: true,
   },
   {
-    path: '/dataset-display-settings',
-    name: 'datasetDisplaySettings',
-    icon: 'SettingOutlined',
-    access: 'canDataProductManager',
-    component: './DatasetDisplaySettings',
-  },
-  {
     path: '/tgdata',
     name: 'tgdata',
     icon: 'FolderOpenOutlined',
@@ -66,6 +59,7 @@ export default [
         path: '/tgdata/displayed-datasets',
         component: './DisplayedDatasets',
         icon: 'EyeOutlined',
+        hideInMenu: true,
       },
       {
         name: 'flows',
@@ -325,6 +319,13 @@ export default [
     access: 'canDataProductManager',
     icon: 'DatabaseOutlined',
     component: './DataProcessing',
+  },
+  {
+    path: '/dataset-display-settings',
+    name: 'datasetDisplaySettings',
+    icon: 'SettingOutlined',
+    access: 'canDataProductManager',
+    component: './DatasetDisplaySettings',
   },
   {
     path: '/account',

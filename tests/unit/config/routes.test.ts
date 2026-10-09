@@ -102,7 +102,7 @@ describe('example data routes', () => {
     expect(routes.indexOf(example)).toBe(routes.indexOf(open) + 1);
   });
 
-  it('exposes displayed datasets and a manager-only first-level configuration menu', () => {
+  it('keeps displayed datasets URL-accessible and places the manager menu after Data Processing', () => {
     const open = routes.find((route) => route.path === '/tgdata')!;
     expect(routes).toContainEqual(
       expect.objectContaining({
@@ -118,7 +118,10 @@ describe('example data routes', () => {
         component: './DisplayedDatasets',
         icon: 'EyeOutlined',
         path: '/tgdata/displayed-datasets',
+        hideInMenu: true,
       }),
     );
+    const dataProcessingIndex = routes.findIndex((route) => route.path === '/data-processing');
+    expect(routes[dataProcessingIndex + 1].path).toBe('/dataset-display-settings');
   });
 });
