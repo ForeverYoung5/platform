@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type Key } from 'react';
-import { App, Button, Input, Result, Select, Space, Tag } from 'antd';
+import { App, Button, Card, Input, Result, Select, Space, Tag } from 'antd';
 import {
   PageContainer,
   ProTable,
@@ -8,7 +8,11 @@ import {
 } from '@ant-design/pro-components';
 import { FormattedMessage, useIntl, useModel } from 'umi';
 import DatasetKindFilter, { datasetKindMessage } from '@/components/DatasetKindFilter';
-import { dataListIndexColumn, responsiveDataListTableProps } from '@/components/ResponsiveDataList';
+import {
+  dataListIndexColumn,
+  responsiveDataListTableProps,
+  responsiveSearchCardClassName,
+} from '@/components/ResponsiveDataList';
 import { getLang } from '@/services/general/util';
 import {
   datasetDisplayKey,
@@ -131,26 +135,29 @@ export default function DatasetDisplaySettings() {
   return (
     <PageContainer header={{ breadcrumb: {}, title: false }}>
       <Space orientation='vertical' style={{ width: '100%' }}>
-        <Input.Search
-          aria-label={intl.formatMessage({
-            id: 'pages.datasetDisplay.search',
-            defaultMessage: 'Search by name or UUID',
-          })}
-          placeholder={intl.formatMessage({
-            id: 'pages.datasetDisplay.search',
-            defaultMessage: 'Search by name or UUID',
-          })}
-          allowClear
-          disabled={pending}
-          maxLength={128}
-          enterButton
-          onSearch={(value) => {
-            epoch.current += 1;
-            clearSelection();
-            setQuery(value.trim());
-            actionRef.current?.reloadAndRest?.();
-          }}
-        />
+        <Card className={responsiveSearchCardClassName}>
+          <Input.Search
+            size='large'
+            aria-label={intl.formatMessage({
+              id: 'pages.datasetDisplay.search',
+              defaultMessage: 'Search by name or UUID',
+            })}
+            placeholder={intl.formatMessage({
+              id: 'pages.datasetDisplay.search',
+              defaultMessage: 'Search by name or UUID',
+            })}
+            allowClear
+            disabled={pending}
+            maxLength={128}
+            enterButton
+            onSearch={(value) => {
+              epoch.current += 1;
+              clearSelection();
+              setQuery(value.trim());
+              actionRef.current?.reloadAndRest?.();
+            }}
+          />
+        </Card>
         <ProTable<DatasetDisplayRow>
           {...responsiveDataListTableProps}
           actionRef={actionRef}
