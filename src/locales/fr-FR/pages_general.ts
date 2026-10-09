@@ -230,7 +230,6 @@ export default {
   'pages.datasetDisplay.hidden': 'Non affiché',
   'pages.datasetDisplay.visibility': 'Visibilité',
   'pages.datasetDisplay.search': 'Rechercher par nom ou UUID',
-  'pages.datasetDisplay.view': 'Voir les jeux de données affichés',
   'pages.datasetDisplay.success': '{count} éléments mis à jour ; {unchanged} étaient déjà configurés.',
   'pages.datasetDisplay.updateError': 'Échec de la mise à jour des paramètres d’affichage. Veuillez réessayer.',
   'pages.datasetDisplay.loadError': 'Échec du chargement des jeux de données. Veuillez actualiser.',

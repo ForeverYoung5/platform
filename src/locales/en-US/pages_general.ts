@@ -230,7 +230,6 @@ export default {
   'pages.datasetDisplay.hidden': 'Not displayed',
   'pages.datasetDisplay.visibility': 'Visibility',
   'pages.datasetDisplay.search': 'Search by name or UUID',
-  'pages.datasetDisplay.view': 'View displayed datasets',
   'pages.datasetDisplay.success': 'Updated {count} items; {unchanged} were already configured.',
   'pages.datasetDisplay.updateError': 'Failed to update display settings. Please retry.',
   'pages.datasetDisplay.loadError': 'Failed to load datasets. Please refresh.',

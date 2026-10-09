@@ -6,7 +6,7 @@ import {
   type ActionType,
   type ProColumns,
 } from '@ant-design/pro-components';
-import { FormattedMessage, Link, useIntl, useModel } from 'umi';
+import { FormattedMessage, useIntl, useModel } from 'umi';
 import DatasetKindFilter, { datasetKindMessage } from '@/components/DatasetKindFilter';
 import { dataListIndexColumn, responsiveDataListTableProps } from '@/components/ResponsiveDataList';
 import { getLang } from '@/services/general/util';
@@ -278,12 +278,6 @@ export default function DatasetDisplaySettings() {
                 values={{ count: selectedRows.length }}
               />
             </Button>,
-            <Link key='view' to='/displayed-datasets'>
-              <FormattedMessage
-                id='pages.datasetDisplay.view'
-                defaultMessage='View displayed datasets'
-              />
-            </Link>,
           ]}
         />
       </Space>

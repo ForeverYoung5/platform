@@ -3,7 +3,7 @@
   "source": {
     "baseRef": "c26f306e82ac66f50a56aafe8f89ea96c0b0c67d",
     "baseCommit": "c26f306e82ac66f50a56aafe8f89ea96c0b0c67d",
-    "auditedInputDigest": "473371010d07d8cd5e345e27711db0035914494d784ca312a092f7656bcb34b7",
+    "auditedInputDigest": "3718530b0c101b6bf29e6b2faefbf139b36d71dcd96acb90d58c6bb581ba887c",
     "auditedInputDigestAlgorithm": "sha256(path\\0content\\0)",
     "repository": "tiangong-lca/platform"
   },
@@ -69,13 +69,13 @@
   "summary": {
     "localeCount": 4,
     "localeLeafModuleCounts": { "en-US": 31, "zh-CN": 31, "de-DE": 31, "fr-FR": 31 },
-    "localeUniqueKeyCounts": { "en-US": 3545, "zh-CN": 3545, "de-DE": 3545, "fr-FR": 3545 },
-    "canonicalCandidateKeyCount": 3545,
-    "activeStaticKeyCount": 2354,
+    "localeUniqueKeyCounts": { "en-US": 3544, "zh-CN": 3544, "de-DE": 3544, "fr-FR": 3544 },
+    "canonicalCandidateKeyCount": 3544,
+    "activeStaticKeyCount": 2353,
     "activeDynamicKeyCount": 321,
     "reservedKeyCount": 870,
     "productionSourceFileCount": 496,
-    "literalReferenceCount": 4312,
+    "literalReferenceCount": 4311,
     "dynamicCallsiteCount": 36,
     "dynamicCallsiteSummaryCount": 36,
     "registeredDynamicCallsiteCount": 36,
@@ -82964,7 +82964,7 @@
           "placeholders": [],
           "source": {
             "path": "src/locales/en-US/pages_general.ts",
-            "line": 236,
+            "line": 235,
             "column": 3,
             "module": "pages_general"
           }
@@ -82975,7 +82975,7 @@
           "placeholders": [],
           "source": {
             "path": "src/locales/zh-CN/pages_general.ts",
-            "line": 235,
+            "line": 234,
             "column": 3,
             "module": "pages_general"
           }
@@ -82986,7 +82986,7 @@
           "placeholders": [],
           "source": {
             "path": "src/locales/de-DE/pages_general.ts",
-            "line": 236,
+            "line": 235,
             "column": 3,
             "module": "pages_general"
           }
@@ -82997,7 +82997,7 @@
           "placeholders": [],
           "source": {
             "path": "src/locales/fr-FR/pages_general.ts",
-            "line": 236,
+            "line": 235,
             "column": 3,
             "module": "pages_general"
           }
@@ -83329,7 +83329,7 @@
           "placeholders": ["count", "unchanged"],
           "source": {
             "path": "src/locales/en-US/pages_general.ts",
-            "line": 234,
+            "line": 233,
             "column": 3,
             "module": "pages_general"
           }
@@ -83343,7 +83343,7 @@
           "placeholders": ["count", "unchanged"],
           "source": {
             "path": "src/locales/zh-CN/pages_general.ts",
-            "line": 233,
+            "line": 232,
             "column": 3,
             "module": "pages_general"
           }
@@ -83357,7 +83357,7 @@
           "placeholders": ["count", "unchanged"],
           "source": {
             "path": "src/locales/de-DE/pages_general.ts",
-            "line": 234,
+            "line": 233,
             "column": 3,
             "module": "pages_general"
           }
@@ -83371,7 +83371,7 @@
           "placeholders": ["count", "unchanged"],
           "source": {
             "path": "src/locales/fr-FR/pages_general.ts",
-            "line": 234,
+            "line": 233,
             "column": 3,
             "module": "pages_general"
           }
@@ -83507,7 +83507,7 @@
           "placeholders": [],
           "source": {
             "path": "src/locales/en-US/pages_general.ts",
-            "line": 235,
+            "line": 234,
             "column": 3,
             "module": "pages_general"
           }
@@ -83518,7 +83518,7 @@
           "placeholders": [],
           "source": {
             "path": "src/locales/zh-CN/pages_general.ts",
-            "line": 234,
+            "line": 233,
             "column": 3,
             "module": "pages_general"
           }
@@ -83529,7 +83529,7 @@
           "placeholders": [],
           "source": {
             "path": "src/locales/de-DE/pages_general.ts",
-            "line": 235,
+            "line": 234,
             "column": 3,
             "module": "pages_general"
           }
@@ -83540,7 +83540,7 @@
           "placeholders": [],
           "source": {
             "path": "src/locales/fr-FR/pages_general.ts",
-            "line": 235,
+            "line": 234,
             "column": 3,
             "module": "pages_general"
           }
@@ -83568,89 +83568,6 @@
               "line": 79,
               "column": 11,
               "kind": "formatMessage"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "pages.datasetDisplay.view",
-      "category": "active-static",
-      "dynamicFamilies": [],
-      "moduleOwnership": {
-        "en-US": ["pages_general"],
-        "zh-CN": ["pages_general"],
-        "de-DE": ["pages_general"],
-        "fr-FR": ["pages_general"]
-      },
-      "translations": {
-        "en-US": {
-          "value": "View displayed datasets",
-          "argumentSignature": [],
-          "placeholders": [],
-          "source": {
-            "path": "src/locales/en-US/pages_general.ts",
-            "line": 233,
-            "column": 3,
-            "module": "pages_general"
-          }
-        },
-        "zh-CN": {
-          "value": "查看展示数据",
-          "argumentSignature": [],
-          "placeholders": [],
-          "source": {
-            "path": "src/locales/zh-CN/pages_general.ts",
-            "line": 232,
-            "column": 3,
-            "module": "pages_general"
-          }
-        },
-        "de-DE": {
-          "value": "Angezeigte Datensätze öffnen",
-          "argumentSignature": [],
-          "placeholders": [],
-          "source": {
-            "path": "src/locales/de-DE/pages_general.ts",
-            "line": 233,
-            "column": 3,
-            "module": "pages_general"
-          }
-        },
-        "fr-FR": {
-          "value": "Voir les jeux de données affichés",
-          "argumentSignature": [],
-          "placeholders": [],
-          "source": {
-            "path": "src/locales/fr-FR/pages_general.ts",
-            "line": 233,
-            "column": 3,
-            "module": "pages_general"
-          }
-        }
-      },
-      "references": [
-        {
-          "kind": "FormattedMessage",
-          "path": "src/pages/DatasetDisplaySettings/index.tsx",
-          "line": 282,
-          "column": 15,
-          "symbol": "DatasetDisplaySettings",
-          "defaultMessage": "View displayed datasets",
-          "defaultMessageExpression": null
-        }
-      ],
-      "defaultMessages": [
-        {
-          "value": "View displayed datasets",
-          "argumentSignature": [],
-          "placeholders": [],
-          "locations": [
-            {
-              "path": "src/pages/DatasetDisplaySettings/index.tsx",
-              "line": 282,
-              "column": 15,
-              "kind": "FormattedMessage"
             }
           ]
         }

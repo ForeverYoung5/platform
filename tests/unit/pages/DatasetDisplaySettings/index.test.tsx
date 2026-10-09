@@ -45,7 +45,6 @@ jest.mock('umi', () => ({
   FormattedMessage: ({ defaultMessage, values = {} }: any) => (
     <>{defaultMessage.replace(/\{(\w+)\}/g, (_: string, k: string) => String(values[k]))}</>
   ),
-  Link: ({ children, to }: any) => <a href={to}>{children}</a>,
 }));
 jest.mock('antd', () => {
   const actual = jest.requireActual('antd');
@@ -125,10 +124,7 @@ describe('manager display settings page', () => {
   );
   it('loads unrestricted candidates through the dedicated RPC and exposes a normal full page', async () => {
     render(<Page />);
-    expect(screen.getByRole('link', { name: 'View displayed datasets' })).toHaveAttribute(
-      'href',
-      '/displayed-datasets',
-    );
+    expect(screen.queryByRole('link', { name: 'View displayed datasets' })).not.toBeInTheDocument();
     await act(async () => {
       await mockTableProps.request({ current: 2, pageSize: 10 });
     });

@@ -2319,8 +2319,7 @@
         "pages.datasetDisplay.settings",
         "pages.datasetDisplay.visibility",
         "pages.datasetDisplay.showSelected",
-        "pages.datasetDisplay.hideSelected",
-        "pages.datasetDisplay.view"
+        "pages.datasetDisplay.hideSelected"
       ],
       "trigger": "Open the manager-only route as a standard actor and observe the localized denial boundary. Focused manager tests separately verify exact-version set/cancel and filters.",
       "component": "src/pages/DatasetDisplaySettings/index.tsx",

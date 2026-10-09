@@ -229,7 +229,6 @@ export default {
   'pages.datasetDisplay.hidden': '未展示',
   'pages.datasetDisplay.visibility': '展示状态',
   'pages.datasetDisplay.search': '按名称或 UUID 搜索',
-  'pages.datasetDisplay.view': '查看展示数据',
   'pages.datasetDisplay.success': '已更新 {count} 项，{unchanged} 项无需更改。',
   'pages.datasetDisplay.updateError': '更新展示配置失败，请重试。',
   'pages.datasetDisplay.loadError': '加载数据失败，请刷新重试。',

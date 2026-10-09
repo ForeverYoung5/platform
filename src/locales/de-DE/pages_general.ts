@@ -230,7 +230,6 @@ export default {
   'pages.datasetDisplay.hidden': 'Nicht angezeigt',
   'pages.datasetDisplay.visibility': 'Sichtbarkeit',
   'pages.datasetDisplay.search': 'Nach Name oder UUID suchen',
-  'pages.datasetDisplay.view': 'Angezeigte Datensätze öffnen',
   'pages.datasetDisplay.success': '{count} Einträge aktualisiert; {unchanged} waren bereits eingestellt.',
   'pages.datasetDisplay.updateError': 'Anzeigeeinstellungen konnten nicht aktualisiert werden. Bitte erneut versuchen.',
   'pages.datasetDisplay.loadError': 'Datensätze konnten nicht geladen werden. Bitte aktualisieren.',
