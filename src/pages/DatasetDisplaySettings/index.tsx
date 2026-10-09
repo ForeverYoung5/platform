@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type Key } from 'react';
-import { Alert, App, Button, Input, Result, Select, Space, Tag } from 'antd';
+import { App, Button, Input, Result, Select, Space, Tag } from 'antd';
 import {
   PageContainer,
   ProTable,
@@ -22,7 +22,7 @@ import {
 export default function DatasetDisplaySettings() {
   const intl = useIntl();
   const lang = getLang(intl.locale);
-  const { message } = App.useApp();
+  const { message, modal } = App.useApp();
   const { initialState } = useModel('@@initialState');
   const canConfigure = initialState?.currentUser?.access === 'data_product_manager';
   const actionRef = useRef<ActionType | undefined>(undefined);
@@ -34,7 +34,6 @@ export default function DatasetDisplaySettings() {
   const [selectedKeys, setSelectedKeys] = useState<Key[]>([]);
   const [selectedRows, setSelectedRows] = useState<DatasetDisplayRow[]>([]);
   const [pending, setPending] = useState(false);
-  const [listFailed, setListFailed] = useState(false);
   const clearSelection = () => {
     setSelectedKeys([]);
     setSelectedRows([]);
@@ -152,18 +151,6 @@ export default function DatasetDisplaySettings() {
             actionRef.current?.reloadAndRest?.();
           }}
         />
-        {listFailed && (
-          <Alert
-            type='error'
-            showIcon
-            title={
-              <FormattedMessage
-                id='pages.datasetDisplay.loadError'
-                defaultMessage='Failed to load datasets. Please refresh.'
-              />
-            }
-          />
-        )}
         <ProTable<DatasetDisplayRow>
           {...responsiveDataListTableProps}
           actionRef={actionRef}
@@ -191,9 +178,20 @@ export default function DatasetDisplaySettings() {
               },
               lang,
               true,
-            );
-            if (mounted.current && epoch.current === token) setListFailed(!result.success);
-            return result;
+            ).catch(() => ({ data: [], success: false, total: 0 }));
+            if (!mounted.current || epoch.current !== token)
+              return { data: [], success: false, total: 0 };
+            if (result.success) return result;
+            clearSelection();
+            modal.error({
+              title: intl.formatMessage({
+                id: 'pages.datasetDisplay.loadError',
+                defaultMessage: 'Failed to load datasets. Please refresh.',
+              }),
+            });
+            // ProTable retains prior rows when success is false. Report the error above,
+            // then let the table consume the empty result and reset its total.
+            return { data: [], success: true, total: 0 };
           }}
           rowSelection={{
             selectedRowKeys: selectedKeys,

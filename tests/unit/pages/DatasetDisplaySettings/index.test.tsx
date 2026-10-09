@@ -4,6 +4,7 @@ const mockList = jest.fn(),
   mockSetDisplay = jest.fn(),
   mockSuccess = jest.fn(),
   mockError = jest.fn(),
+  mockLoadErrorDialog = jest.fn(),
   mockReload = jest.fn();
 let mockRole = 'data_product_manager',
   mockLocale = 'en-US',
@@ -50,7 +51,12 @@ jest.mock('antd', () => {
   const actual = jest.requireActual('antd');
   return {
     ...actual,
-    App: { useApp: () => ({ message: { success: mockSuccess, error: mockError } }) },
+    App: {
+      useApp: () => ({
+        message: { success: mockSuccess, error: mockError },
+        modal: { error: mockLoadErrorDialog },
+      }),
+    },
     Select: ({ options, onChange, value, disabled, ...p }: any) => (
       <select
         aria-label={p['aria-label']}
@@ -199,18 +205,48 @@ describe('manager display settings page', () => {
     view.rerender(<Page />);
     expect(mockTableProps.rowSelection.selectedRowKeys).toEqual([]);
   });
-  it('shows mockList failures and clears the mockError after a successful refresh', async () => {
-    mockList.mockResolvedValueOnce({ data: [], success: false, total: 0 });
-    render(<Page />);
-    await act(async () => {
-      await mockTableProps.request({});
-    });
-    expect(screen.getByText('Failed to load datasets. Please refresh.')).toBeInTheDocument();
-    await act(async () => {
-      await mockTableProps.request({});
-    });
-    expect(screen.queryByText('Failed to load datasets. Please refresh.')).not.toBeInTheDocument();
-  });
+  it.each(['response', 'rejection'])(
+    'replaces prior rows and selection with an empty table and a dialog on load %s, then recovers',
+    async (failure) => {
+      render(<Page />);
+      await act(async () => {
+        expect(await mockTableProps.request({})).toEqual({
+          data: [mockRow],
+          success: true,
+          total: 1,
+        });
+      });
+      fireEvent.click(screen.getByRole('button', { name: 'Select row' }));
+      if (failure === 'response')
+        mockList.mockResolvedValueOnce({ data: [mockRow], success: false, total: 1 });
+      else mockList.mockRejectedValueOnce(new Error('network failure'));
+      await act(async () => {
+        expect(await mockTableProps.request({})).toEqual({
+          data: [],
+          success: true,
+          total: 0,
+        });
+      });
+      expect(mockLoadErrorDialog).toHaveBeenCalledTimes(1);
+      expect(mockLoadErrorDialog).toHaveBeenCalledWith({
+        title: 'Failed to load datasets. Please refresh.',
+      });
+      expect(mockTableProps.rowSelection.selectedRowKeys).toEqual([]);
+      expect(screen.getByRole('button', { name: 'Show selected (0)' })).toBeDisabled();
+      expect(screen.getByRole('button', { name: 'Hide selected (0)' })).toBeDisabled();
+      expect(
+        screen.queryByText('Failed to load datasets. Please refresh.'),
+      ).not.toBeInTheDocument();
+      await act(async () => {
+        expect(await mockTableProps.request({})).toEqual({
+          data: [mockRow],
+          success: true,
+          total: 1,
+        });
+      });
+      expect(mockLoadErrorDialog).toHaveBeenCalledTimes(1);
+    },
+  );
   it('renders configured visibility and ignores disabled or stale action callbacks', async () => {
     const view = render(<Page />);
     const columns = mockTableProps.columns;
@@ -250,30 +286,34 @@ describe('manager display settings page', () => {
       expect(mockReload).not.toHaveBeenCalled();
     },
   );
-  it('ignores stale list failure and unmounted list completion', async () => {
-    const pending = deferred();
-    mockList.mockReturnValueOnce(pending.promise);
-    const view = render(<Page />);
-    let stale!: Promise<any>;
-    act(() => {
-      stale = mockTableProps.request({ current: 1 });
-    });
-    await act(async () => mockTableProps.request({ current: 2 }));
-    await act(async () => {
-      pending.resolve({ data: [], success: false, total: 0 });
-      await stale;
-    });
-    expect(screen.queryByText('Failed to load datasets. Please refresh.')).not.toBeInTheDocument();
-    const unmounted = deferred();
-    mockList.mockReturnValueOnce(unmounted.promise);
-    let last!: Promise<any>;
-    act(() => {
-      last = mockTableProps.request({});
-    });
-    view.unmount();
-    await act(async () => {
-      unmounted.resolve({ data: [], success: false, total: 0 });
-      await last;
-    });
-  });
+  it.each([false, true])(
+    'ignores stale list success=%s and unmounted completion',
+    async (success) => {
+      const pending = deferred();
+      mockList.mockReturnValueOnce(pending.promise);
+      const view = render(<Page />);
+      let stale!: Promise<any>;
+      act(() => {
+        stale = mockTableProps.request({ current: 1 });
+      });
+      await act(async () => mockTableProps.request({ current: 2 }));
+      await act(async () => {
+        pending.resolve({ data: [mockRow], success, total: 1 });
+        expect(await stale).toEqual({ data: [], success: false, total: 0 });
+      });
+      expect(mockLoadErrorDialog).not.toHaveBeenCalled();
+      const unmounted = deferred();
+      mockList.mockReturnValueOnce(unmounted.promise);
+      let last!: Promise<any>;
+      act(() => {
+        last = mockTableProps.request({});
+      });
+      view.unmount();
+      await act(async () => {
+        unmounted.resolve({ data: [], success: false, total: 0 });
+        expect(await last).toEqual({ data: [], success: false, total: 0 });
+      });
+      expect(mockLoadErrorDialog).not.toHaveBeenCalled();
+    },
+  );
 });
