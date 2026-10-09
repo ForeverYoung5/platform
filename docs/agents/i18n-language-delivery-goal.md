@@ -57,8 +57,8 @@ checkPaths:
   - .github/workflows/build.yml
   - package.json
 lastReviewedAt: 2026-10-09
-lastReviewedCommit: 249de4fd4b2cd1404979f629ef7d65da1053a656
-lastReviewedNote: 'Platform #1194: current route contract binds 60 assertions and 57 configured routes to the first-level display settings page and displayed datasets page. Immutable historical CI evidence is rejected for changed routes; labelled synthetic producer round-trip and route regressions pass in 3 suites / 52 tests. Full checked-push remains the submission gate; Database800 and Edge470 are required, with no merge or deployment.'
+lastReviewedCommit: bce938c009c8ec02236158ab18361c31f2b1af34
+lastReviewedNote: 'Platform #1194: seven-type manager display configuration, 60 assertions / 57 routes, explicit audited display read RPCs, and PageContainer17 / ProTable69 inventory are synchronized. Immutable historical route proof is rejected; 52 route-proof tests, 125 surface/request contract assertions and 30 service/search regressions pass. Original Open Data search filters and Process result lookup are preserved. Full checked-push remains required; Database800 / Edge470 precede rollout. No merge or deployment.'
 baselineObservedAt: 2026-07-18
 related:
   - ../../AGENTS.md

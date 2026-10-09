@@ -26,8 +26,8 @@ checkPaths:
   - config/docs-capture/**
   - tests/e2e/i18n/**
 lastReviewedAt: 2026-10-09
-lastReviewedCommit: f5aca59ba37cbc888475f12d3d6e8e5a450de243
-lastReviewedNote: 'Platform #1194: seven-type exact-version display configuration in a manager-only first-level menu and mixed displayed list; old route/writer removed, existing Process numerical lookup preserved. Focused52 suites588 assertions, new-code100% coverage, lint/types, four-locale artifacts and production build pass. Full checked-push gate and paired Database800/Edge470 govern submission; no merge or deployment is authorized.'
+lastReviewedCommit: bce938c009c8ec02236158ab18361c31f2b1af34
+lastReviewedNote: 'Platform #1194: seven-type manager display configuration, 60 assertions / 57 routes, explicit audited display read RPCs, and PageContainer17 / ProTable69 inventory are synchronized. Immutable historical route proof is rejected; 52 route-proof tests, 125 surface/request contract assertions and 30 service/search regressions pass. Original Open Data search filters and Process result lookup are preserved. Full checked-push remains required; Database800 / Edge470 precede rollout. No merge or deployment.'
 related:
   - ../AGENTS.md
   - ../.docpact/config.yaml
