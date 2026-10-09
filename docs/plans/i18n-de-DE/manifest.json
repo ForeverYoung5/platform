@@ -3,7 +3,7 @@
   "source": {
     "baseRef": "c26f306e82ac66f50a56aafe8f89ea96c0b0c67d",
     "baseCommit": "c26f306e82ac66f50a56aafe8f89ea96c0b0c67d",
-    "auditedInputDigest": "23797dd22f60c6912e3b7f517993a585d6ba77ccf2828ed8b5b38afe41f26ce5",
+    "auditedInputDigest": "20b7a9b951cdca2774d1dd3ed5b31b22083725c2bb4875d2a689754f76d26de4",
     "auditedInputDigestAlgorithm": "sha256(path\\0content\\0)",
     "repository": "tiangong-lca/platform"
   },
@@ -27424,6 +27424,65 @@
       "defaultMessages": []
     },
     {
+      "id": "menu.displayedDatasets",
+      "category": "reserved",
+      "dynamicFamilies": [],
+      "moduleOwnership": {
+        "en-US": ["menu"],
+        "zh-CN": ["menu"],
+        "de-DE": ["menu"],
+        "fr-FR": ["menu"]
+      },
+      "translations": {
+        "en-US": {
+          "value": "Displayed datasets",
+          "argumentSignature": [],
+          "placeholders": [],
+          "source": {
+            "path": "src/locales/en-US/menu.ts",
+            "line": 113,
+            "column": 3,
+            "module": "menu"
+          }
+        },
+        "zh-CN": {
+          "value": "展示数据",
+          "argumentSignature": [],
+          "placeholders": [],
+          "source": {
+            "path": "src/locales/zh-CN/menu.ts",
+            "line": 113,
+            "column": 3,
+            "module": "menu"
+          }
+        },
+        "de-DE": {
+          "value": "Angezeigte Datensätze",
+          "argumentSignature": [],
+          "placeholders": [],
+          "source": {
+            "path": "src/locales/de-DE/menu.ts",
+            "line": 113,
+            "column": 3,
+            "module": "menu"
+          }
+        },
+        "fr-FR": {
+          "value": "Jeux de données affichés",
+          "argumentSignature": [],
+          "placeholders": [],
+          "source": {
+            "path": "src/locales/fr-FR/menu.ts",
+            "line": 113,
+            "column": 3,
+            "module": "menu"
+          }
+        }
+      },
+      "references": [],
+      "defaultMessages": []
+    },
+    {
       "id": "menu.editor",
       "category": "reserved",
       "dynamicFamilies": [],
@@ -32172,65 +32231,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "menu.tgdata.displayedDatasets",
-      "category": "reserved",
-      "dynamicFamilies": [],
-      "moduleOwnership": {
-        "en-US": ["menu"],
-        "zh-CN": ["menu"],
-        "de-DE": ["menu"],
-        "fr-FR": ["menu"]
-      },
-      "translations": {
-        "en-US": {
-          "value": "Displayed datasets",
-          "argumentSignature": [],
-          "placeholders": [],
-          "source": {
-            "path": "src/locales/en-US/menu.ts",
-            "line": 113,
-            "column": 3,
-            "module": "menu"
-          }
-        },
-        "zh-CN": {
-          "value": "展示数据",
-          "argumentSignature": [],
-          "placeholders": [],
-          "source": {
-            "path": "src/locales/zh-CN/menu.ts",
-            "line": 113,
-            "column": 3,
-            "module": "menu"
-          }
-        },
-        "de-DE": {
-          "value": "Angezeigte Datensätze",
-          "argumentSignature": [],
-          "placeholders": [],
-          "source": {
-            "path": "src/locales/de-DE/menu.ts",
-            "line": 113,
-            "column": 3,
-            "module": "menu"
-          }
-        },
-        "fr-FR": {
-          "value": "Jeux de données affichés",
-          "argumentSignature": [],
-          "placeholders": [],
-          "source": {
-            "path": "src/locales/fr-FR/menu.ts",
-            "line": 113,
-            "column": 3,
-            "module": "menu"
-          }
-        }
-      },
-      "references": [],
-      "defaultMessages": []
     },
     {
       "id": "menu.tgdata.flowproperties",

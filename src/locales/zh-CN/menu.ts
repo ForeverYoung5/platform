@@ -110,5 +110,5 @@ export default {
 
   'menu.password_forgot': '忘记密码',
   'menu.datasetDisplaySettings': '展示配置',
-  'menu.tgdata.displayedDatasets': '展示数据',
+  'menu.displayedDatasets': '展示数据',
 };

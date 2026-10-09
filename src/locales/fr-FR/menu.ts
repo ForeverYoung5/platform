@@ -110,5 +110,5 @@ export default {
 
   'menu.password_forgot': 'Mot de passe oublié',
   'menu.datasetDisplaySettings': 'Paramètres d’affichage',
-  'menu.tgdata.displayedDatasets': 'Jeux de données affichés',
+  'menu.displayedDatasets': 'Jeux de données affichés',
 };

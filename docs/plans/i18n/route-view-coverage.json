@@ -1423,21 +1423,20 @@
         "separator": " / "
       }
     },
-    "rv.displayed-datasets.tgdata": {
+    "rv.displayed-datasets": {
       "kind": "localized-view",
       "session": "authenticated",
       "navigate": {
-        "hashPath": "/tgdata/displayed-datasets",
+        "hashPath": "/displayed-datasets",
         "hashQuery": {}
       },
       "expected": {
-        "hashPath": "/tgdata/displayed-datasets",
+        "hashPath": "/displayed-datasets",
         "hashQuery": {}
       },
       "visible": {
         "kind": "locale-messages",
         "messageIds": [
-          "menu.tgdata",
           "pages.datasetDisplay.title",
           "pages.table.title.name",
           "pages.table.title.version",
@@ -1745,9 +1744,9 @@
     },
     {
       "id": "displayed-datasets",
-      "routes": ["/tgdata/displayed-datasets"],
+      "routes": ["/displayed-datasets"],
       "executableAssertionIds": {
-        "/tgdata/displayed-datasets": "rv.displayed-datasets.tgdata"
+        "/displayed-datasets": "rv.displayed-datasets"
       },
       "viewState": "displayed-dataset-list",
       "pageOwnedMessageIds": [
@@ -1761,7 +1760,7 @@
       ],
       "trigger": "Open displayed datasets and filter the seven types; review exact-version Process results, missing/zero, failure, refresh and pagination.",
       "component": "src/pages/DisplayedDatasets/index.tsx",
-      "accessContext": "authenticated-session-required with open-data read permissions",
+      "accessContext": "authenticated-session-required with dedicated displayed-dataset metadata reads; independent of Open Data routes",
       "copySources": {
         "sourcePaths": [
           "config/routes.ts",

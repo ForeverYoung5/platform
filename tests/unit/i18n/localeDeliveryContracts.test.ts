@@ -89,7 +89,7 @@ describe('shared locale delivery contracts', () => {
     ).toBe(false);
     expect(coverageRows).toHaveLength(60);
     expect(Object.keys(coverage.executableTargets)).toEqual(
-      expect.arrayContaining(['rv.dataset-display-settings', 'rv.displayed-datasets.tgdata']),
+      expect.arrayContaining(['rv.dataset-display-settings', 'rv.displayed-datasets']),
     );
     expect(coverage.executableTargets['rv.published-processes.tgdata']).toBeUndefined();
     const executableAssertionIds = coverageRows.map(

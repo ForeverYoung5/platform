@@ -110,5 +110,5 @@ export default {
 
   'menu.password_forgot': 'Forgot Password',
   'menu.datasetDisplaySettings': 'Display settings',
-  'menu.tgdata.displayedDatasets': 'Displayed datasets',
+  'menu.displayedDatasets': 'Displayed datasets',
 };

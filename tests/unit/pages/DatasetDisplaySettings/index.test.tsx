@@ -127,7 +127,7 @@ describe('manager display settings page', () => {
     render(<Page />);
     expect(screen.getByRole('link', { name: 'View displayed datasets' })).toHaveAttribute(
       'href',
-      '/tgdata/displayed-datasets',
+      '/displayed-datasets',
     );
     await act(async () => {
       await mockTableProps.request({ current: 2, pageSize: 10 });

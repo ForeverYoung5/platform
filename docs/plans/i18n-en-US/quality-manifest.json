@@ -3,18 +3,18 @@
   "locale": "en-US",
   "source": {
     "baselineSha": "c26f306e82ac66f50a56aafe8f89ea96c0b0c67d",
-    "sourceManifestDigest": "a8191fd19f611b149188137bbb0001b22643dfc2a5788c3128ad0cda54371d2d",
-    "contextDigest": "9018de51a14c084a5cefe6e641bfd77ba20b385b7cf8e662dbc9112947fdf6d4"
+    "sourceManifestDigest": "7e9c7539269290f7dfc0e2b11bd6d3428773325710c35f3a4eff9b6f12923689",
+    "contextDigest": "67f62326ca9639855500b001ca2035d64243bfacf26e0df34eb36263b84f8ff0"
   },
   "catalog": {
     "messageCount": 3545,
-    "catalogDigest": "fde57d800598cad12d39f4f01e1e99636cee2182cb88494e3bb0da8b2e52c22c",
+    "catalogDigest": "23b41115c185d7dc5228dfbfa2ff703ed293e61d4508f48812de03401c8943ac",
     "emptyTranslationCount": 0,
     "acceptedSourceEmptyCount": 1,
     "acceptedSourceEmptyDigest": "182ce2fe247d78a1af1027643331be2239d4e4815d2a32f5795a8f6954367560",
     "cjkLeakCount": 0,
     "suspiciousSourceEqualityCount": 3467,
-    "suspiciousSourceEqualityDigest": "3589b409320eb3de4d7771f97efe333866bafc5ae03738643c8d3a506797c31b",
+    "suspiciousSourceEqualityDigest": "f9b39ee448491a1b3e29a82121c6590ac1fef9ca8aee3fbe434258fd711040a9",
     "acceptedTechnicalSourceEqualityCount": 77,
     "acceptedTechnicalSourceEqualityDigest": "ab551199d677f4e20571b26110dd35e48281f8ecf4bf18b6f09c6dba2e2e863f",
     "acceptedDeclaredSourceEqualityCount": 0,
@@ -42,8 +42,8 @@
   },
   "structuralValidation": {
     "path": "docs/plans/i18n-en-US/structural-validation.json",
-    "digest": "62eb797cf6bd9efdfb22e53756b5ede2b0f780325fe6e9c990f05df94dd224ae",
-    "validationDigest": "ece07d21aa693bcb466cc3531040f28db7d7680a0e2c6e1872cc62d75e0720b4",
+    "digest": "634776916cfe4ea2fe65206d7110f9f23a98717a99f698b2d339934918e51729",
+    "validationDigest": "338f61f20191e5db77f1ae65c0295e122a52b3d21d995b053fb5fe1b780f744c",
     "laneCount": 1,
     "validatedMessageCount": 3545,
     "validatedModuleCount": 32,
@@ -53,5 +53,5 @@
     "blockedItems": 0,
     "semanticReviewPerformed": false
   },
-  "qualityDigest": "360fcdb369b4b9811283da7f40d263a1b2218da581a4d0d04fcba1c84cc87c4d"
+  "qualityDigest": "f565404f5dd20b690415001c24979f527b46ba4cd1cb243fd40bdc136a5a3e97"
 }

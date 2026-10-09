@@ -278,7 +278,7 @@ export default function DatasetDisplaySettings() {
                 values={{ count: selectedRows.length }}
               />
             </Button>,
-            <Link key='view' to='/tgdata/displayed-datasets'>
+            <Link key='view' to='/displayed-datasets'>
               <FormattedMessage
                 id='pages.datasetDisplay.view'
                 defaultMessage='View displayed datasets'
