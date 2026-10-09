@@ -34,6 +34,13 @@ export default [
     hideInMenu: true,
   },
   {
+    path: '/dataset-display-settings',
+    name: 'datasetDisplaySettings',
+    icon: 'SettingOutlined',
+    access: 'canDataProductManager',
+    component: './DatasetDisplaySettings',
+  },
+  {
     path: '/tgdata',
     name: 'tgdata',
     icon: 'FolderOpenOutlined',
@@ -55,10 +62,10 @@ export default [
         component: './Processes',
       },
       {
-        name: 'publishedProcesses',
-        path: '/tgdata/published-processes',
-        component: './PublishedProcesses',
-        hideInMenu: true,
+        name: 'displayedDatasets',
+        path: '/tgdata/displayed-datasets',
+        component: './DisplayedDatasets',
+        icon: 'EyeOutlined',
       },
       {
         name: 'flows',

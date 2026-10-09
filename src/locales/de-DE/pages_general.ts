@@ -221,4 +221,17 @@ export default {
   'pages.button.confirm': 'Bestätigen',
 
   'pages.pagination.showTotal': 'Einträge {start}–{end} von {total}',
+  'pages.datasetDisplay.settings': 'Anzeigeeinstellungen',
+  'pages.datasetDisplay.title': 'Angezeigte Datensätze',
+  'pages.datasetDisplay.showSelected': 'Auswahl anzeigen ({count})',
+  'pages.datasetDisplay.hideSelected': 'Auswahl ausblenden ({count})',
+  'pages.datasetDisplay.allVisibility': 'Alle Anzeigestatus',
+  'pages.datasetDisplay.visible': 'Sichtbar',
+  'pages.datasetDisplay.hidden': 'Ausgeblendet',
+  'pages.datasetDisplay.visibility': 'Sichtbarkeit',
+  'pages.datasetDisplay.search': 'Nach Name oder UUID suchen',
+  'pages.datasetDisplay.view': 'Angezeigte Datensätze öffnen',
+  'pages.datasetDisplay.success': '{count} Einträge aktualisiert; {unchanged} waren bereits eingestellt.',
+  'pages.datasetDisplay.updateError': 'Anzeigeeinstellungen konnten nicht aktualisiert werden. Bitte erneut versuchen.',
+  'pages.datasetDisplay.loadError': 'Datensätze konnten nicht geladen werden. Bitte aktualisieren.',
 };

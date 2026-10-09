@@ -221,4 +221,17 @@ export default {
   'pages.button.confirm': 'Confirmer',
 
   'pages.pagination.showTotal': 'Éléments {start} à {end} sur {total}',
+  'pages.datasetDisplay.settings': 'Paramètres d’affichage',
+  'pages.datasetDisplay.title': 'Jeux de données affichés',
+  'pages.datasetDisplay.showSelected': 'Afficher la sélection ({count})',
+  'pages.datasetDisplay.hideSelected': 'Masquer la sélection ({count})',
+  'pages.datasetDisplay.allVisibility': 'Tous les états d’affichage',
+  'pages.datasetDisplay.visible': 'Visible',
+  'pages.datasetDisplay.hidden': 'Masqué',
+  'pages.datasetDisplay.visibility': 'Visibilité',
+  'pages.datasetDisplay.search': 'Rechercher par nom ou UUID',
+  'pages.datasetDisplay.view': 'Voir les jeux de données affichés',
+  'pages.datasetDisplay.success': '{count} éléments mis à jour ; {unchanged} étaient déjà configurés.',
+  'pages.datasetDisplay.updateError': 'Échec de la mise à jour des paramètres d’affichage. Veuillez réessayer.',
+  'pages.datasetDisplay.loadError': 'Échec du chargement des jeux de données. Veuillez actualiser.',
 };

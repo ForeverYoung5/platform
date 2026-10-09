@@ -85,7 +85,8 @@ describe('example data routes', () => {
     const open = routes.find((route) => route.path === '/tgdata')!;
     const example = routes.find((route) => route.path === '/exampledata')!;
     const reusableOpenRoutes = open.routes?.filter(
-      (route) => !('hideInMenu' in route && route.hideInMenu),
+      (route) =>
+        !('hideInMenu' in route && route.hideInMenu) && route.component !== './DisplayedDatasets',
     );
     expect(example.name).toBe('exampledata');
     expect(example.routes).toEqual(
@@ -101,14 +102,22 @@ describe('example data routes', () => {
     expect(routes.indexOf(example)).toBe(routes.indexOf(open) + 1);
   });
 
-  it('exposes the published-process page by URL without adding a menu entry', () => {
+  it('exposes displayed datasets and a manager-only first-level configuration menu', () => {
     const open = routes.find((route) => route.path === '/tgdata')!;
-
+    expect(routes).toContainEqual(
+      expect.objectContaining({
+        path: '/dataset-display-settings',
+        component: './DatasetDisplaySettings',
+        access: 'canDataProductManager',
+        name: 'datasetDisplaySettings',
+      }),
+    );
+    expect(JSON.stringify(routes)).not.toContain('/tgdata/published-processes');
     expect(open.routes).toContainEqual(
       expect.objectContaining({
-        component: './PublishedProcesses',
-        hideInMenu: true,
-        path: '/tgdata/published-processes',
+        component: './DisplayedDatasets',
+        icon: 'EyeOutlined',
+        path: '/tgdata/displayed-datasets',
       }),
     );
   });

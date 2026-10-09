@@ -109,4 +109,6 @@ export default {
   'menu.codata.contacts': 'Kontakte',
 
   'menu.password_forgot': 'Passwort vergessen',
+  'menu.datasetDisplaySettings': 'Anzeigeeinstellungen',
+  'menu.tgdata.displayedDatasets': 'Angezeigte Datensätze',
 };
