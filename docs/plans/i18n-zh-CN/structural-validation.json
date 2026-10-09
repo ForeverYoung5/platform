@@ -3,7 +3,7 @@
   "locale": "zh-CN",
   "validationClosure": {
     "baselineSha": "c26f306e82ac66f50a56aafe8f89ea96c0b0c67d",
-    "auditedInputDigest": "5100566050bf3b95c801446f9218e46e8283a89c82774db1f515d32a569a15b5",
+    "auditedInputDigest": "fedb9f5ab0f34014dee5ceb83fdc0548dfc3e79655fb9ad4cb180ad1a6305073",
     "validatedMessageCount": 3544,
     "validatedModules": [
       "$entry",
@@ -42,9 +42,9 @@
     "highRiskMessageCount": 1662,
     "highRiskMessageDigest": "e37518afe9f8e284ad3aa480011beba503d2ffc2db3dcb59f4b8b253b83c1169",
     "catalogDigest": "b5dd0169b8fb390fe3c3223f0ab80ba1c4c6a7e132c16f83b7ed97f45209bca9",
-    "dossierDigest": "0225570e91a0ec7ebadd812a6830865720bebbfff4a77ade181efc4a5b098460",
+    "dossierDigest": "dbf0961297b0fec327d11b2a34bbfb81765c3a2c210c9207388e9464c827b80e",
     "typedContentDossierDigest": "cea189a77b03f66042197c8383d684813c09e3a0356684d325e62eaf73af4c99",
-    "routeEvidenceDigest": "f0aaac0f5d97f613b2fc03054cf77a4d96347e4bec838ab9bb00015dfced3475",
+    "routeEvidenceDigest": "8c9d957623cd8adfc7c06f2317901bbd722375e9f9e27d3019bf087467da93ea",
     "scope": "deterministic structure only; semantic translation and rendered route review are separate production blockers owned by #635"
   },
   "validationLanes": [
@@ -98,7 +98,7 @@
         "messageDigest": "54a84a6dcb66c790d9448daa3e7833d294c02503802341ed8dc94c39dc047e1a",
         "highRiskMessageCount": 1662,
         "highRiskMessageDigest": "e37518afe9f8e284ad3aa480011beba503d2ffc2db3dcb59f4b8b253b83c1169",
-        "dossierDigest": "0225570e91a0ec7ebadd812a6830865720bebbfff4a77ade181efc4a5b098460",
+        "dossierDigest": "dbf0961297b0fec327d11b2a34bbfb81765c3a2c210c9207388e9464c827b80e",
         "checks": {
           "nonEmptyTargets": true,
           "icuArgumentSignatureParity": true,
@@ -113,5 +113,5 @@
     }
   ],
   "blockedItems": [],
-  "validationDigest": "5c00034644bcd2d51f8d4f03aae4be2e6c5facaf6697a6c741e3e756af7bd46d"
+  "validationDigest": "64d540b7e6d22de68b1ad6acaeaeaa1cd826fed378713a021aea16cf02276fed"
 }

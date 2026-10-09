@@ -3,7 +3,7 @@
   "source": {
     "baseRef": "c26f306e82ac66f50a56aafe8f89ea96c0b0c67d",
     "baseCommit": "c26f306e82ac66f50a56aafe8f89ea96c0b0c67d",
-    "auditedInputDigest": "5100566050bf3b95c801446f9218e46e8283a89c82774db1f515d32a569a15b5",
+    "auditedInputDigest": "fedb9f5ab0f34014dee5ceb83fdc0548dfc3e79655fb9ad4cb180ad1a6305073",
     "auditedInputDigestAlgorithm": "sha256(path\\0content\\0)",
     "repository": "tiangong-lca/platform"
   },
@@ -82749,8 +82749,8 @@
         {
           "kind": "formatMessage",
           "path": "src/pages/DatasetDisplaySettings/index.tsx",
-          "line": 236,
-          "column": 26,
+          "line": 243,
+          "column": 24,
           "symbol": "DatasetDisplaySettings",
           "defaultMessage": "All",
           "defaultMessageExpression": null
@@ -82764,8 +82764,8 @@
           "locations": [
             {
               "path": "src/pages/DatasetDisplaySettings/index.tsx",
-              "line": 236,
-              "column": 26,
+              "line": 243,
+              "column": 24,
               "kind": "formatMessage"
             }
           ]
@@ -82832,7 +82832,7 @@
         {
           "kind": "FormattedMessage",
           "path": "src/pages/DatasetDisplaySettings/index.tsx",
-          "line": 127,
+          "line": 130,
           "column": 11,
           "symbol": "columns",
           "defaultMessage": null,
@@ -82841,8 +82841,8 @@
         {
           "kind": "formatMessage",
           "path": "src/pages/DatasetDisplaySettings/index.tsx",
-          "line": 250,
-          "column": 26,
+          "line": 257,
+          "column": 24,
           "symbol": "DatasetDisplaySettings",
           "defaultMessage": "Not displayed",
           "defaultMessageExpression": null
@@ -82856,8 +82856,8 @@
           "locations": [
             {
               "path": "src/pages/DatasetDisplaySettings/index.tsx",
-              "line": 250,
-              "column": 26,
+              "line": 257,
+              "column": 24,
               "kind": "formatMessage"
             }
           ]
@@ -82924,8 +82924,8 @@
         {
           "kind": "FormattedMessage",
           "path": "src/pages/DatasetDisplaySettings/index.tsx",
-          "line": 280,
-          "column": 15,
+          "line": 287,
+          "column": 13,
           "symbol": "DatasetDisplaySettings",
           "defaultMessage": "Hide selected ({count})",
           "defaultMessageExpression": null
@@ -82939,8 +82939,8 @@
           "locations": [
             {
               "path": "src/pages/DatasetDisplaySettings/index.tsx",
-              "line": 280,
-              "column": 15,
+              "line": 287,
+              "column": 13,
               "kind": "FormattedMessage"
             }
           ]
@@ -83007,8 +83007,8 @@
         {
           "kind": "formatMessage",
           "path": "src/pages/DatasetDisplaySettings/index.tsx",
-          "line": 194,
-          "column": 22,
+          "line": 201,
+          "column": 20,
           "symbol": "DatasetDisplaySettings",
           "defaultMessage": "Failed to load datasets. Please refresh.",
           "defaultMessageExpression": null
@@ -83031,8 +83031,8 @@
           "locations": [
             {
               "path": "src/pages/DatasetDisplaySettings/index.tsx",
-              "line": 194,
-              "column": 22,
+              "line": 201,
+              "column": 20,
               "kind": "formatMessage"
             },
             {
@@ -83105,8 +83105,8 @@
         {
           "kind": "formatMessage",
           "path": "src/pages/DatasetDisplaySettings/index.tsx",
-          "line": 141,
-          "column": 25,
+          "line": 149,
+          "column": 27,
           "symbol": "DatasetDisplaySettings",
           "defaultMessage": "Search by name or UUID",
           "defaultMessageExpression": null
@@ -83114,8 +83114,8 @@
         {
           "kind": "formatMessage",
           "path": "src/pages/DatasetDisplaySettings/index.tsx",
-          "line": 145,
-          "column": 26,
+          "line": 153,
+          "column": 28,
           "symbol": "DatasetDisplaySettings",
           "defaultMessage": "Search by name or UUID",
           "defaultMessageExpression": null
@@ -83129,14 +83129,14 @@
           "locations": [
             {
               "path": "src/pages/DatasetDisplaySettings/index.tsx",
-              "line": 141,
-              "column": 25,
+              "line": 149,
+              "column": 27,
               "kind": "formatMessage"
             },
             {
               "path": "src/pages/DatasetDisplaySettings/index.tsx",
-              "line": 145,
-              "column": 26,
+              "line": 153,
+              "column": 28,
               "kind": "formatMessage"
             }
           ]
@@ -83203,8 +83203,8 @@
         {
           "kind": "FormattedMessage",
           "path": "src/pages/DatasetDisplaySettings/index.tsx",
-          "line": 166,
-          "column": 13,
+          "line": 176,
+          "column": 11,
           "symbol": "DatasetDisplaySettings",
           "defaultMessage": "Display settings",
           "defaultMessageExpression": null
@@ -83218,8 +83218,8 @@
           "locations": [
             {
               "path": "src/pages/DatasetDisplaySettings/index.tsx",
-              "line": 166,
-              "column": 13,
+              "line": 176,
+              "column": 11,
               "kind": "FormattedMessage"
             }
           ]
@@ -83286,8 +83286,8 @@
         {
           "kind": "FormattedMessage",
           "path": "src/pages/DatasetDisplaySettings/index.tsx",
-          "line": 269,
-          "column": 15,
+          "line": 276,
+          "column": 13,
           "symbol": "DatasetDisplaySettings",
           "defaultMessage": "Show selected ({count})",
           "defaultMessageExpression": null
@@ -83301,8 +83301,8 @@
           "locations": [
             {
               "path": "src/pages/DatasetDisplaySettings/index.tsx",
-              "line": 269,
-              "column": 15,
+              "line": 276,
+              "column": 13,
               "kind": "FormattedMessage"
             }
           ]
@@ -83381,7 +83381,7 @@
         {
           "kind": "formatMessage",
           "path": "src/pages/DatasetDisplaySettings/index.tsx",
-          "line": 68,
+          "line": 71,
           "column": 11,
           "symbol": "change",
           "defaultMessage": "Updated {count} items; {unchanged} were already configured.",
@@ -83399,7 +83399,7 @@
           "locations": [
             {
               "path": "src/pages/DatasetDisplaySettings/index.tsx",
-              "line": 68,
+              "line": 71,
               "column": 11,
               "kind": "formatMessage"
             }
@@ -83550,7 +83550,7 @@
         {
           "kind": "formatMessage",
           "path": "src/pages/DatasetDisplaySettings/index.tsx",
-          "line": 82,
+          "line": 85,
           "column": 11,
           "symbol": "change",
           "defaultMessage": "Failed to update display settings. Please retry.",
@@ -83565,7 +83565,7 @@
           "locations": [
             {
               "path": "src/pages/DatasetDisplaySettings/index.tsx",
-              "line": 82,
+              "line": 85,
               "column": 11,
               "kind": "formatMessage"
             }
@@ -83633,7 +83633,7 @@
         {
           "kind": "FormattedMessage",
           "path": "src/pages/DatasetDisplaySettings/index.tsx",
-          "line": 122,
+          "line": 125,
           "column": 14,
           "symbol": "columns",
           "defaultMessage": "Visibility",
@@ -83642,8 +83642,8 @@
         {
           "kind": "formatMessage",
           "path": "src/pages/DatasetDisplaySettings/index.tsx",
-          "line": 226,
-          "column": 27,
+          "line": 233,
+          "column": 25,
           "symbol": "DatasetDisplaySettings",
           "defaultMessage": "Visibility",
           "defaultMessageExpression": null
@@ -83657,14 +83657,14 @@
           "locations": [
             {
               "path": "src/pages/DatasetDisplaySettings/index.tsx",
-              "line": 122,
+              "line": 125,
               "column": 14,
               "kind": "FormattedMessage"
             },
             {
               "path": "src/pages/DatasetDisplaySettings/index.tsx",
-              "line": 226,
-              "column": 27,
+              "line": 233,
+              "column": 25,
               "kind": "formatMessage"
             }
           ]
@@ -83731,7 +83731,7 @@
         {
           "kind": "FormattedMessage",
           "path": "src/pages/DatasetDisplaySettings/index.tsx",
-          "line": 127,
+          "line": 130,
           "column": 11,
           "symbol": "columns",
           "defaultMessage": null,
@@ -83740,8 +83740,8 @@
         {
           "kind": "formatMessage",
           "path": "src/pages/DatasetDisplaySettings/index.tsx",
-          "line": 243,
-          "column": 26,
+          "line": 250,
+          "column": 24,
           "symbol": "DatasetDisplaySettings",
           "defaultMessage": "Displayed",
           "defaultMessageExpression": null
@@ -83755,8 +83755,8 @@
           "locations": [
             {
               "path": "src/pages/DatasetDisplaySettings/index.tsx",
-              "line": 243,
-              "column": 26,
+              "line": 250,
+              "column": 24,
               "kind": "formatMessage"
             }
           ]
@@ -83901,7 +83901,7 @@
         {
           "kind": "FormattedMessage",
           "path": "src/pages/DatasetDisplaySettings/index.tsx",
-          "line": 114,
+          "line": 117,
           "column": 9,
           "symbol": "columns",
           "defaultMessage": "Data type",
@@ -83925,7 +83925,7 @@
           "locations": [
             {
               "path": "src/pages/DatasetDisplaySettings/index.tsx",
-              "line": 114,
+              "line": 117,
               "column": 9,
               "kind": "FormattedMessage"
             },
@@ -260405,7 +260405,7 @@
         {
           "kind": "FormattedMessage",
           "path": "src/pages/DatasetDisplaySettings/index.tsx",
-          "line": 95,
+          "line": 98,
           "column": 14,
           "symbol": "columns",
           "defaultMessage": "Index",
@@ -260684,7 +260684,7 @@
             },
             {
               "path": "src/pages/DatasetDisplaySettings/index.tsx",
-              "line": 95,
+              "line": 98,
               "column": 14,
               "kind": "FormattedMessage"
             },
@@ -261045,7 +261045,7 @@
         {
           "kind": "FormattedMessage",
           "path": "src/pages/DatasetDisplaySettings/index.tsx",
-          "line": 101,
+          "line": 104,
           "column": 14,
           "symbol": "columns",
           "defaultMessage": "Name",
@@ -261276,7 +261276,7 @@
             },
             {
               "path": "src/pages/DatasetDisplaySettings/index.tsx",
-              "line": 101,
+              "line": 104,
               "column": 14,
               "kind": "FormattedMessage"
             },
@@ -262224,7 +262224,7 @@
         {
           "kind": "FormattedMessage",
           "path": "src/pages/DatasetDisplaySettings/index.tsx",
-          "line": 107,
+          "line": 110,
           "column": 14,
           "symbol": "columns",
           "defaultMessage": "Version",
@@ -262455,7 +262455,7 @@
             },
             {
               "path": "src/pages/DatasetDisplaySettings/index.tsx",
-              "line": 107,
+              "line": 110,
               "column": 14,
               "kind": "FormattedMessage"
             },
@@ -290610,7 +290610,7 @@
       "count": 1,
       "file": "src/pages/DatasetDisplaySettings/index.tsx",
       "expression": "datasetKindMessage(row.datasetKind)",
-      "locations": ["118:27"],
+      "locations": ["121:27"],
       "category": "active-dynamic",
       "family": "datasetDisplayKinds",
       "reviewStatus": "reviewed"
