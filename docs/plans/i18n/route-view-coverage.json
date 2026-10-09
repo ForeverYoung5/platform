@@ -2323,9 +2323,9 @@
         "pages.datasetDisplay.hideSelected",
         "pages.datasetDisplay.view"
       ],
-      "trigger": "Open the manager-only full page; select exact versions, set or cancel visibility, filter and search.",
+      "trigger": "Open the manager-only route as a standard actor and observe the localized denial boundary. Focused manager tests separately verify exact-version set/cancel and filters.",
       "component": "src/pages/DatasetDisplaySettings/index.tsx",
-      "accessContext": "data_product_manager only; all other authenticated roles denied",
+      "accessContext": "data_product_manager workflow; a standard authenticated actor observes the localized access boundary",
       "copySources": {
         "sourcePaths": [
           "config/routes.ts",
@@ -2344,7 +2344,7 @@
         "missingContent": 0
       },
       "proof": {
-        "requiredEvidenceScope": "internal-localization",
+        "requiredEvidenceScope": "access-boundary-observed",
         "focusedTests": [
           "tests/unit/pages/DatasetDisplaySettings/index.test.tsx",
           "tests/unit/config/routes.test.ts"
