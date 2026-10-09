@@ -40,8 +40,8 @@ checkPaths:
   - .github/workflows/release-gate.yml
   - .github/workflows/release-readiness.yml
 lastReviewedAt: 2026-10-09
-lastReviewedCommit: 703bf57c3218ee17f007a98abaaefd59c6d3d581
-lastReviewedNote: 'Platform #1194 menu follow-up: displayed datasets stays URL-accessible with hideInMenu; manager-only first-level display settings follows Data Processing. Route regression8/8 passes and four-locale derived evidence is synchronized. Existing seven-type data, identity and numerical contracts are unchanged; full checked-push/build remain required before updating PR1195. No merge or deployment.'
+lastReviewedCommit: 8f868650f53939d6960dab48287fc67c37b0dc10
+lastReviewedNote: 'Platform #1194 route follow-up: displayed datasets is an independent top-level hidden /displayed-datasets route; the nested /tgdata route is removed. Configuration links and four-locale title/route evidence are synchronized; focused64 tests pass. Loopback Playwright confirms direct and configuration-link navigation keep Open Data collapsed, with display settings after Data Processing. Original data/identity/result behavior unchanged; full checked-push/build remain required. No merge or deployment.'
 ---
 
 # Testing Troubleshooting
